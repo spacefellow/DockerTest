@@ -3,7 +3,6 @@ server:
   image: nginx
   volumes:
     - ./server/conf.d:/etc/nginx/conf.d
-    - ./app/static:/app/static
   links:
     - web:web
   ports:
